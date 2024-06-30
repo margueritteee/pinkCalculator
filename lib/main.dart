@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Calculator(),
     );
@@ -155,8 +155,8 @@ class _CalculatorState extends State<Calculator> {
       style: ElevatedButton.styleFrom(
         shape: const CircleBorder(),
         backgroundColor: btncolor,
-        minimumSize: Size(buttonSize, buttonSize),
-        padding: EdgeInsets.all(buttonPadding),
+        minimumSize: const Size(buttonSize, buttonSize),
+        padding: const EdgeInsets.all(buttonPadding),
       ),
       child: Text(
         btntxt,
